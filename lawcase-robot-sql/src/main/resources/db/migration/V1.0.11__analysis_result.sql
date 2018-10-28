@@ -1,0 +1,16 @@
+CREATE TABLE `analysis_result` (
+  `influence_id` BIGINT(20) NOT NULL,
+  `analysis_id` BIGINT(20) NOT NULL,
+  `influence_name` VARCHAR(45) NOT NULL,
+  `pt_influence` VARCHAR(10) NOT NULL,
+  `pt_increase` VARCHAR(10) NOT NULL,
+  `pt_in_min` VARCHAR(45) NOT NULL,
+  `pt_in_max` VARCHAR(45) NOT NULL,
+  `pt_noin_min` VARCHAR(45) NOT NULL,
+  `pt_noin_max` VARCHAR(45) NOT NULL,
+  `reprieve_influence` VARCHAR(45) NOT NULL,
+  `reprieve_increase` VARCHAR(45) NOT NULL,
+  `reprieve_in` VARCHAR(45) NOT NULL,
+  `reprieve_noin` VARCHAR(45) NOT NULL,
+  `analysis_resultcol` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`influence_id`))ENGINE=InnoDB DEFAULT CHARSET=utf8;
